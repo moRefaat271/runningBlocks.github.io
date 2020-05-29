@@ -55,13 +55,13 @@ $(document).ready(function () {
             
             $(myBox1).animate({top: '0px'},speed);
             
-            $(myBox2).animate({top: '0px'},speed);
+            $(myBox2).animate({top: '-300px'},speed);
             
-            $(myBox3).animate({top: '0px'},speed);
+            $(myBox3).animate({top: '-600px'},speed);
             
-            $(myBox4).animate({top: '0px'},speed);
+            $(myBox4).animate({top: '-900px'},speed);
             
-            $(myBox5).animate({top: '0px'},speed);
+            $(myBox5).animate({top: '-1200px'},speed);
             
             $(myBox1).click(function () {
                 $(this).stop();
@@ -71,22 +71,22 @@ $(document).ready(function () {
             $(myBox2).click(function () {
                 $(this).stop();
                 $(myBox2).css({ top: '3060px'});
-                $(myBox2).animate({top: '0px'},speed);
+                $(myBox2).animate({top: '-300px'},speed);
             });
             $(myBox3).click(function () {
                 $(this).stop();
                 $(myBox3).css({ top: '3060px'});
-                $(myBox3).animate({top: '0px'},speed);
+                $(myBox3).animate({top: '-600px'},speed);
             });
             $(myBox4).click(function () {
                 $(this).stop();
                 $(myBox4).css({ top: '3060px'});
-                $(myBox4).animate({top: '0px'},speed);
+                $(myBox4).animate({top: '-900px'},speed);
             });
             $(myBox5).click(function () {
                 $(this).stop();
                 $(myBox5).css({ top: '3060px'});
-                $(myBox5).animate({top: '0px'},speed);
+                $(myBox5).animate({top: '-1200px'},speed);
             });
                 
             
