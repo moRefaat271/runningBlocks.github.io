@@ -1,8 +1,6 @@
 $(document).ready(function () {
-    var speed = 5000;
-    $('.start').click(function () {
-        $(this).fadeOut(function() {
-            var myBox1 = $('<div class="box"></div>').css({
+    var speed = 6000;
+    var myBox1 = $('<div class="box"></div>').css({
                 width: '245px',
                 height: '300px',
                 marginBottom: '40px',
@@ -42,50 +40,51 @@ $(document).ready(function () {
                 position: 'relative',
                 top: '3060px',
             });
+    $(myBox1).appendTo('.box1');
+    $(myBox2).appendTo('.box1');
+    $(myBox3).appendTo('.box1');
+    $(myBox4).appendTo('.box1');
+    $(myBox5).appendTo('.box1');
+    $('.start').click(function () {
+        $(this).fadeOut(function() {
+            
             /*
             $(myBox).animate({top: '0px'},1000);
             $(myBox).appendTo('.boxes');
             */
-            $(myBox1).appendTo('.box1');
+            
             $(myBox1).animate({top: '0px'},speed);
-            $(myBox2).appendTo('.box1');
+            
             $(myBox2).animate({top: '0px'},speed);
-            $(myBox3).appendTo('.box1');
+            
             $(myBox3).animate({top: '0px'},speed);
-            $(myBox4).appendTo('.box1');
+            
             $(myBox4).animate({top: '0px'},speed);
-            $(myBox5).appendTo('.box1');
+            
             $(myBox5).animate({top: '0px'},speed);
             
             $(myBox1).click(function () {
+                $(this).stop();
                 $(myBox1).css({ top: '3060px'});
                 $(myBox1).animate({top: '0px'},speed);
-                /*
-                var box = document.createElement('div').style({width: '245px',height: '300px',backgroundColor: 'green',position: 'relative',bottom: '-300px',});
-                $(box).appendTo('.box1');
-                $(box).animate({top: '0px'},speed);
-                setTimeout(function () {
-                        $(myBox1).appendTo('.box1');
-                        $(myBox1).animate({top: '0px'},speed);  
-                    },speed)*/
             });
             $(myBox2).click(function () {
+                $(this).stop();
                 $(myBox2).css({ top: '3060px'});
                 $(myBox2).animate({top: '0px'},speed);
             });
             $(myBox3).click(function () {
-                $(myBox3).css({ top: '3060px'});
-                $(myBox3).animate({top: '0px'},speed);
-            });
-            $(myBox3).click(function () {
+                $(this).stop();
                 $(myBox3).css({ top: '3060px'});
                 $(myBox3).animate({top: '0px'},speed);
             });
             $(myBox4).click(function () {
+                $(this).stop();
                 $(myBox4).css({ top: '3060px'});
                 $(myBox4).animate({top: '0px'},speed);
             });
             $(myBox5).click(function () {
+                $(this).stop();
                 $(myBox5).css({ top: '3060px'});
                 $(myBox5).animate({top: '0px'},speed);
             });
