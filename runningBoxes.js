@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    var speed = 5000;
+    var speed = 5000,
+        x = 50,
+        myScore = 0;
+    
     var myBox1 = $('<div class="box"></div>').css({
                 width: '245px',
                 height: '300px',
@@ -218,104 +221,165 @@ $(document).ready(function () {
             $(myBox54).animate({top: '-1200px'},speed + 9000);
             
             $(myBox1).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox1).css({ top: '3060px'});
                 $(myBox1).animate({top: '0px'},speed);
+                
             });
             $(myBox2).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox2).css({ top: '3060px'});
                 $(myBox2).animate({top: '-300px'},speed + 2000);
             });
             $(myBox3).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox3).css({ top: '3060px'});
                 $(myBox3).animate({top: '-600px'},speed + 4000);
             });
             $(myBox4).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox4).css({ top: '3060px'});
                 $(myBox4).animate({top: '-900px'},speed + 6000);
             });
             $(myBox5).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox5).css({ top: '3060px'});
                 $(myBox5).animate({top: '-1200px'},speed + 8000);
             });
             
             $(myBox12).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox12).css({ top: '3060px'});
                 $(myBox12).animate({top: '0px'},speed);
             });
             $(myBox22).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox22).css({ top: '3060px'});
                 $(myBox22).animate({top: '-300px'},speed + 2000);
             });
             $(myBox32).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox32).css({ top: '3060px'});
                 $(myBox32).animate({top: '-600px'},speed + 4000);
             });
             $(myBox42).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox42).css({ top: '3060px'});
                 $(myBox42).animate({top: '-900px'},speed + 6000);
             });
             $(myBox52).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox52).css({ top: '3060px'});
                 $(myBox52).animate({top: '-1200px'},speed + 8000);
             });
             
             $(myBox13).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox13).css({ top: '3060px'});
                 $(myBox13).animate({top: '0px'},speed);
             });
             $(myBox23).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox23).css({ top: '3060px'});
                 $(myBox23).animate({top: '-300px'},speed + 2000);
             });
             $(myBox33).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox33).css({ top: '3060px'});
                 $(myBox33).animate({top: '-600px'},speed + 4000);
             });
             $(myBox43).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox43).css({ top: '3060px'});
                 $(myBox43).animate({top: '-900px'},speed + 6000);
             });
             $(myBox53).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox53).css({ top: '3060px'});
                 $(myBox53).animate({top: '-1200px'},speed + 8000);
             });
             
             $(myBox14).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox14).css({ top: '3060px'});
                 $(myBox14).animate({top: '0px'},speed);
             });
             $(myBox24).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox24).css({ top: '3060px'});
                 $(myBox24).animate({top: '-300px'},speed + 2000);
             });
             $(myBox34).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox34).css({ top: '3060px'});
                 $(myBox34).animate({top: '-600px'},speed + 4000);
             });
             $(myBox44).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox44).css({ top: '3060px'});
                 $(myBox44).animate({top: '-900px'},speed + 6000);
             });
             $(myBox54).click(function () {
+                speed = speed - x ;
+                myScore = myScore + 1;
+                document.getElementById('score').textContent = myScore;
                 $(this).stop();
                 $(myBox54).css({ top: '3060px'});
                 $(myBox54).animate({top: '-1200px'},speed + 8000);
