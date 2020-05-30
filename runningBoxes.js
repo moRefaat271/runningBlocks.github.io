@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var speed = 15000,
+    var speed = 10000,
         x = 50,
         myScore = 0;
     
