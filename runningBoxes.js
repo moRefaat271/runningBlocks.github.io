@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var speed = 6000;
+    var speed = 5000;
     var myBox1 = $('<div class="box"></div>').css({
                 width: '245px',
                 height: '300px',
@@ -183,6 +183,8 @@ $(document).ready(function () {
     $(myBox34).appendTo('.box4');
     $(myBox44).appendTo('.box4');
     $(myBox54).appendTo('.box4');
+    
+    
     $('.start').click(function () {
         $(this).fadeOut(function() {
             
@@ -318,8 +320,344 @@ $(document).ready(function () {
                 $(myBox54).css({ top: '3060px'});
                 $(myBox54).animate({top: '-1200px'},speed + 8000);
             });
+            
+             setInterval(function () {
+                    'use strict';
+                    if ($(myBox1).position().top == 2) {
+                        $(myBox1).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox2).position().top == 2) {
+                        $(myBox2).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            setInterval(function () {
+                    'use strict';                
+                    if ($(myBox3).position().top == 2) {
+                        $(myBox3).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
                 
             
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox4).position().top == 2) {
+                        $(myBox4).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox5).position().top == 2) {
+                        $(myBox5).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                        
+                    }
+                },500);
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox12).position().top == 2) {
+                        $(myBox12).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox22).position().top == 2) {
+                        $(myBox22).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            setInterval(function () {
+                    'use strict';                
+                    if ($(myBox32).position().top == 2) {
+                        $(myBox32).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+                
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox42).position().top == 2) {
+                        $(myBox42).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox52).position().top == 2) {
+                        $(myBox52).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox13).position().top == 2) {
+                        $(myBox13).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox23).position().top == 2) {
+                        $(myBox23).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            setInterval(function () {
+                    'use strict';                
+                    if ($(myBox33).position().top == 2) {
+                        $(myBox33).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+                
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox43).position().top == 2) {
+                        $(myBox43).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox53).position().top == 2) {
+                        $(myBox53).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox14).position().top == 2) {
+                        $(myBox14).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox24).position().top == 2) {
+                        $(myBox24).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            setInterval(function () {
+                    'use strict';                
+                    if ($(myBox34).position().top == 2) {
+                        $(myBox34).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+                
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox44).position().top == 2) {
+                        $(myBox44).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                    console.log('Game Over');
+                        
+                    }
+                },500);
+            
+            
+            setInterval(function () {
+                    'use strict';
+                    if ($(myBox54).position().top == 2) {
+                        $(myBox54).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
+                            
+                        
+                    }
+                },500);
         })
     })
 })
