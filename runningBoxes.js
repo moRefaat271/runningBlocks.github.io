@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var speed = 5000,
+    var speed = 15000,
         x = 50,
         myScore = 0;
     
@@ -15,7 +15,7 @@ $(document).ready(function () {
                 width: '245px',
                 height: '300px',
                 //marginBottom: '40px',
-                backgroundColor: 'green',
+                backgroundColor: 'darkorange',
                 position: 'relative',
                 top: '2040px',
             });
@@ -79,7 +79,7 @@ $(document).ready(function () {
                 width: '245px',
                 height: '300px',
               //  marginBottom: '40px',
-                backgroundColor: 'green',
+                backgroundColor: 'darkorange',
                 position: 'relative',
                 top: '3060px',
             });
@@ -103,7 +103,7 @@ $(document).ready(function () {
                 width: '245px',
                 height: '300px',
                 //marginBottom: '40px',
-                backgroundColor: 'green',
+                backgroundColor: 'darkorange',
                 position: 'relative',
                 top: '2380px',
             });
@@ -151,7 +151,7 @@ $(document).ready(function () {
                 width: '245px',
                 height: '300px',
                 //marginBottom: '40px',
-                backgroundColor: 'green',
+                backgroundColor: 'darkorange',
                 position: 'relative',
                 top: '2720px',
             });
@@ -197,7 +197,7 @@ $(document).ready(function () {
             */
             
             $(myBox1).animate({top: '0px'},speed +100);
-            $(myBox2).animate({top: '-300px'},speed + 2000);
+            $(myBox2).animate({top: '-600px'},speed + 2000);
             $(myBox3).animate({top: '-600px'},speed + 4000);
             $(myBox4).animate({top: '-900px'},speed + 6000);
             $(myBox5).animate({top: '-1200px'},speed + 8000);
@@ -206,18 +206,18 @@ $(document).ready(function () {
             $(myBox22).animate({top: '-300px'},speed + 3500);
             $(myBox32).animate({top: '-600px'},speed + 5500);
             $(myBox42).animate({top: '-900px'},speed + 7500);
-            $(myBox52).animate({top: '-1200px'},speed + 9500);
+            $(myBox52).animate({top: '-1500px'},speed + 9500);
             
             $(myBox13).animate({top: '0px'},speed);
             $(myBox23).animate({top: '-300px'},speed + 2000);
-            $(myBox33).animate({top: '-600px'},speed + 4000);
+            $(myBox33).animate({top: '-900px'},speed + 4000);
             $(myBox43).animate({top: '-900px'},speed + 6000);
             $(myBox53).animate({top: '-1200px'},speed + 8000);
             
             $(myBox14).animate({top: '0px'},speed + 1000);
             $(myBox24).animate({top: '-300px'},speed + 3000);
             $(myBox34).animate({top: '-600px'},speed + 5000);
-            $(myBox44).animate({top: '-900px'},speed + 7000);
+            $(myBox44).animate({top: '-1200px'},speed + 7000);
             $(myBox54).animate({top: '-1200px'},speed + 9000);
             
             $(myBox1).click(function () {
@@ -230,12 +230,16 @@ $(document).ready(function () {
                 
             });
             $(myBox2).click(function () {
-                speed = speed - x ;
-                myScore = myScore + 1;
-                document.getElementById('score').textContent = myScore;
+                
                 $(this).stop();
-                $(myBox2).css({ top: '3060px'});
-                $(myBox2).animate({top: '-300px'},speed + 2000);
+                $(this).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
             });
             $(myBox3).click(function () {
                 speed = speed - x ;
@@ -295,12 +299,15 @@ $(document).ready(function () {
                 $(myBox42).animate({top: '-900px'},speed + 6000);
             });
             $(myBox52).click(function () {
-                speed = speed - x ;
-                myScore = myScore + 1;
-                document.getElementById('score').textContent = myScore;
                 $(this).stop();
-                $(myBox52).css({ top: '3060px'});
-                $(myBox52).animate({top: '-1200px'},speed + 8000);
+                $(this).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
             });
             
             $(myBox13).click(function () {
@@ -320,12 +327,15 @@ $(document).ready(function () {
                 $(myBox23).animate({top: '-300px'},speed + 2000);
             });
             $(myBox33).click(function () {
-                speed = speed - x ;
-                myScore = myScore + 1;
-                document.getElementById('score').textContent = myScore;
                 $(this).stop();
-                $(myBox33).css({ top: '3060px'});
-                $(myBox33).animate({top: '-600px'},speed + 4000);
+                $(this).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
             });
             $(myBox43).click(function () {
                 speed = speed - x ;
@@ -369,12 +379,15 @@ $(document).ready(function () {
                 $(myBox34).animate({top: '-600px'},speed + 4000);
             });
             $(myBox44).click(function () {
-                speed = speed - x ;
-                myScore = myScore + 1;
-                document.getElementById('score').textContent = myScore;
                 $(this).stop();
-                $(myBox44).css({ top: '3060px'});
-                $(myBox44).animate({top: '-900px'},speed + 6000);
+                $(this).css({backgroundColor: 'red'});
+                        $('.boxes').fadeOut();
+                        $('.container').append('<div class="end">Game Over</div>');
+                        setInterval(function () {
+                            'use strict';
+                            $('.end').animate({fontSize: '70px'});
+                            $('.end').animate({fontSize: '50px'});
+                        },1000);
             });
             $(myBox54).click(function () {
                 speed = speed - x ;
@@ -403,17 +416,9 @@ $(document).ready(function () {
                 },500);
             setInterval(function () {
                     'use strict';
-                    if ($(myBox2).position().top == 2) {
-                        $(myBox2).css({backgroundColor: 'red'});
-                        $('.boxes').fadeOut();
-                        $('.container').append('<div class="end">Game Over</div>');
-                        setInterval(function () {
-                            'use strict';
-                            $('.end').animate({fontSize: '70px'});
-                            $('.end').animate({fontSize: '50px'});
-                        },1000);
-                            
-                    console.log('Game Over');
+                    if ($(myBox2).position().top == -298) {
+                        $(myBox2).css({ top: '3060px'});
+                        $(myBox2).animate({top: '-600px'},speed + 2000);
                         
                     }
                 },500);
@@ -541,17 +546,9 @@ $(document).ready(function () {
             
             setInterval(function () {
                     'use strict';
-                    if ($(myBox52).position().top == 2) {
-                        $(myBox52).css({backgroundColor: 'red'});
-                        $('.boxes').fadeOut();
-                        $('.container').append('<div class="end">Game Over</div>');
-                        setInterval(function () {
-                            'use strict';
-                            $('.end').animate({fontSize: '70px'});
-                            $('.end').animate({fontSize: '50px'});
-                        },1000);
-                            
-                        
+                    if ($(myBox52).position().top == -298) {
+                        $(myBox52).css({ top: '3060px'});
+                        $(myBox52).animate({top: '-1500px'},speed + 2000);
                     }
                 },500);
             setInterval(function () {
@@ -588,19 +585,10 @@ $(document).ready(function () {
                 },500);
             
             setInterval(function () {
-                    'use strict';                
-                    if ($(myBox33).position().top == 2) {
-                        $(myBox33).css({backgroundColor: 'red'});
-                        $('.boxes').fadeOut();
-                        $('.container').append('<div class="end">Game Over</div>');
-                        setInterval(function () {
-                            'use strict';
-                            $('.end').animate({fontSize: '70px'});
-                            $('.end').animate({fontSize: '50px'});
-                        },1000);
-                            
-                    console.log('Game Over');
-                        
+                    'use strict';
+                    if ($(myBox33).position().top == -298) {
+                        $(myBox33).css({ top: '3060px'});
+                        $(myBox33).animate({top: '-900px'},speed + 2000);
                     }
                 },500);
                 
@@ -691,18 +679,9 @@ $(document).ready(function () {
             
             setInterval(function () {
                     'use strict';
-                    if ($(myBox44).position().top == 2) {
-                        $(myBox44).css({backgroundColor: 'red'});
-                        $('.boxes').fadeOut();
-                        $('.container').append('<div class="end">Game Over</div>');
-                        setInterval(function () {
-                            'use strict';
-                            $('.end').animate({fontSize: '70px'});
-                            $('.end').animate({fontSize: '50px'});
-                        },1000);
-                            
-                    console.log('Game Over');
-                        
+                    if ($(myBox44).position().top == -298) {
+                        $(myBox44).css({ top: '3060px'});
+                        $(myBox44).animate({top: '-1200px'},speed + 2000);
                     }
                 },500);
             
