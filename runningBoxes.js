@@ -196,7 +196,7 @@ $(document).ready(function () {
             $(myBox).appendTo('.boxes');
             */
             
-            $(myBox1).animate({top: '0px'},speed);
+            $(myBox1).animate({top: '0px'},speed +100);
             $(myBox2).animate({top: '-300px'},speed + 2000);
             $(myBox3).animate({top: '-600px'},speed + 4000);
             $(myBox4).animate({top: '-900px'},speed + 6000);
